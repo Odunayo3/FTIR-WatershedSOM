@@ -9,7 +9,7 @@ This repository contains the R code and data for the manuscript titled "Integrat
 In this study, we explored the relationships between Soil Organic Matter (SOM) properties, serving as potential indicators of soil degradation and erosion, and environmental, geomorphic, and hydrological characteristics in an agricultural-forested Mediterranean watershed. SOM composition of fluvial sediments sampled across the watershed was analyzed using FTIR spectroscopy to calculate FTIR-based proxies for the relative hydrophobicity of SOM, Cation Exchange Capacity (CEC), and organic-matter-cation associations. To investigate geospatial relationships between SOM composition influencing erosion susceptibility and the factors driving its variability at the watershed scale, such as terrain characteristics, soil properties, lithological, and LULC data, we used a Random Forest modeling approach. Our findings indicate that the size and configuration of the contributing areas associated with the sampling points played a crucial role in interpreting the relationships between SOM composition and environmental factors. Oak, hornbeam, and chestnut forests influence hydrophobic organic matter accumulation, making soils more prone to water erosion, where clay content potentially intensifies erosion susceptibility under particular climatic conditions. Moreover, SOM chemical components were spatially linked to sediment dynamics and organic matter connectivity across the watershed, with topographic features such as elevation and channel network base level being key factors. Also, CEC was found to be a potential indicator of soil erosion in geomorphologically active areas. Lastly, carbonate-rich soils appeared to positively influence organic-matter-cation associations, potentially enhancing aggregate stability and reducing erosion susceptibility. This study provides significant new insights into the complex relationships between SOM composition, environmental predictors, and soil erosion in Mediterranean watersheds, supporting novel research hypotheses and perspectives from both a scientific and applicative point of view.
 
 # Repository Contents
-soil_degradation_analysis.R: R script containing the full analysis, including data loading, feature selection using the FSelector package, Random Forest modeling with the caret package, model evaluation with the ithir package, and feature importance and Accumulated Local Effects (ALE) plots using the iml package.
+som_ftir_modeling.R: R script containing the full analysis, including data loading, feature selection using the FSelector package, Random Forest modeling with the caret package, model evaluation with the ithir package, and feature importance and Accumulated Local Effects (ALE) plots using the iml package.
 
 data/: Folder containing the input datasets:
 Experiment1.csv: Data for Experiment 1.
@@ -52,7 +52,7 @@ R
 install.packages(readLines("requirements.txt"))
 
 Run the Analysis:
-Open soil_degradation_analysis.R in R or RStudio.
+Open som_ftir_modeling.R in R or RStudio.
 
 Ensure the data/ folder with Experiment1.csv, Experiment2.csv, and Experiment3.csv is in the working directory.
 
