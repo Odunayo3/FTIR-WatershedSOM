@@ -76,6 +76,14 @@ NSE <- function(sim, obs) {
 
 Ensure the working directory is set to the repository root to correctly load the CSV files from the data/ folder.
 
+## Using Pre-Trained Models
+To apply the pre-trained Random Forest models to new data, use the `use_trained_models.R` script:
+- Prepare your dataset with the same predictor columns as in `data/Experiment*.csv`.
+- Place your dataset in the `data/` folder (e.g., `data/new_data.csv`).
+- Run `use_trained_models.R` in R or RStudio to generate predictions for `CH.C.O`, `CH.C.O.C`, `C.O.C.O.C`, and `OMcat.C.O.C` across all three experiments.
+- Predictions are saved as `predictions_new_data.csv`.
+See the script for detailed instructions on data preparation.
+
 # License
 This project is licensed under the MIT License (LICENSE).
 # Contact
