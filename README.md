@@ -1,5 +1,6 @@
-# SoilDegradationModeling
-Code for manuscript: Integration of FTIR-based soil degradation indices with stochastic modelling
+# FTIR-WatershedSOMmodelling
+
+Code for manuscript: Integration of FTIR-based soil degradation indices with stochastic modelling to assess spatial patterns of organic matter-sediment dynamics in a Mediterranean watershed – Insights from the Northern Apennines
 
 # Overview
 This repository contains the R code and data for the manuscript titled "Integration of FTIR-based soil degradation indices with stochastic modelling to assess spatial patterns of organic matter-sediment dynamics in a Mediterranean watershed". The study explores relationships between Soil Organic Matter (SOM) properties, environmental factors, and soil erosion in a Mediterranean watershed using FTIR-based proxies and Random Forest modeling.
@@ -20,16 +21,17 @@ requirements.txt: Lists the required R packages to run the analysis.
 
 # Data Description
 The datasets (Experiment1.csv, Experiment2.csv, Experiment3.csv) contain measurements from a Mediterranean watershed, with the following structure:
-Columns 1-4: Response variables:
-CH.C.O: Relative hydrophobicity of SOM.
+Columns 1-4: Targeted variables:
 
-CH.C.O.C: Proxy for organic-matter-cation associations.
+CH.C.O: - A/B = proxy for relative hydrophobicity of SOM (1)
 
-C.O.C.O.C: Proxy for organic-matter-cation associations (alternative metric).
+CH.C.O.C: - A/D = proxy for relative hydrophobicity of SOM (2).
 
-OMcat.C.O.C: Proxy for Cation Exchange Capacity (CEC).
+C.O.C.O.C: - B/D = proxy for relative Cation Exchange Capacity.
 
-Columns 5-44: Predictor variables, including terrain characteristics (e.g., Elevation, Aspect, VDCN, Downslope.Distance.Gradient), soil properties (e.g., Clay, Sand, SOC.stock), lithological data (e.g., Carbonate.Turbidites), and land use/land cover (LULC) data (e.g., Oak..hornbeam.and.chestnuts.forests, Beech.forests, Anthropic.areas).
+OMcat.C.O.C: - C/D = proxy for relative organic matter-cation associations
+
+Columns 5-44: Feature variables, including terrain characteristics, soil properties, lithological data, and land use/land cover (LULC) data.
 
 Note: If you cannot access the data files due to restrictions, contact Manuel (manuel.lalicata01@universitadipavia.it) for details on the dataset structure to replicate the analysis with similar data.
 
@@ -60,7 +62,7 @@ Model Files: Saved as .rds files in the working directory (e.g., CH.C.O_df1_mode
 
 Plots: Feature importance plots and ALE plots for each experiment and response variable (e.g., CH.C.O, CH.C.O.C, C.O.C.O.C, OMcat.C.O.C) are displayed and can be saved manually.
 
-Metrics: Model performance metrics (e.g., Nash-Sutcliffe Efficiency) are computed using the ithir::goof function and saved in .rds files.
+Metrics: Model performance metrics are computed using the ithir::goof function and saved in .rds files.
 
 # Reproducibility Notes
 The script uses a Random Forest model with 10-fold LOOCV repeated 50 times (caret::trainControl).
@@ -92,9 +94,7 @@ For questions about the code, data, or manuscript, contact Odunayo (odunayodavid
 # Citation
 
 If you use this code or data, please cite:
-Manuel et al. (2025). Integration of FTIR-based soil degradation indices with stochastic modelling to assess spatial patterns of organic matter-sediment dynamics in a Mediterranean watershed. 
-Also,
-Check: https://doi.org/10.5281/zenodo.15097417
+La Licata et al. (2025). Integration of FTIR-based soil degradation indices with stochastic modelling to assess spatial patterns of organic matter-sediment dynamics in a Mediterranean watershed – Insights from the Northern Apennines.
 
 
 
