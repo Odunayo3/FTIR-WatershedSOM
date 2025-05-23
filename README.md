@@ -1,4 +1,4 @@
-# FTIR-WatershedSOMmodelling
+# FTIR-WatershedSOM
 
 Code for manuscript: Integration of FTIR-based soil degradation indices with stochastic modelling to assess spatial patterns of organic matter-sediment dynamics in a Mediterranean watershed – Insights from the Northern Apennines
 
