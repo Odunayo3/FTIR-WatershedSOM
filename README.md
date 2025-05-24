@@ -40,8 +40,8 @@ Note: If you cannot access the data files due to restrictions, contact Manuel (m
 Clone the Repository:
 bash
 
-git clone https://github.com/your-username/SoilDegradationModeling.git
-cd SoilDegradationModeling
+git clone https://github.com/Odunayo3/FTIR-WatershedSOM.git
+cd FTIR-WatershedSOM
 
 Install R and Dependencies:
 Ensure R is installed (version 4.0 or higher recommended).
