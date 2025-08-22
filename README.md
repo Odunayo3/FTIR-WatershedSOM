@@ -95,7 +95,7 @@ For questions about the code, data, or manuscript, contact Odunayo (odunayodavid
 # Citation
 
 If you use this code or data, please cite:
-La Licata et al. (2025). Integration of FTIR-based soil degradation indices with stochastic modelling to assess spatial patterns of organic matter-sediment dynamics in a Mediterranean watershed – Insights from the Northern Apennines.
+La Licata M, Adeniyi OD, Ellerbrock RH, Bhattarai N, Bosino A, Papke N, et al. (2025) FTIR-derived soil degradation indices and stochastic modelling of organic matter–sediment dynamics in a Mediterranean watershed: A Northern Apennines case study. PLoS One 20(8): e0330252. https://doi.org/10.1371/journal.pone.0330252.
 
 
 
